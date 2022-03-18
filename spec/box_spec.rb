@@ -2,6 +2,8 @@ require_relative '../lib/box'
 
 describe 'A box' do
 
+  box = Box.new
+
   describe 'attributes' do
     it 'has tiles' do
       box = Box.new
@@ -31,11 +33,11 @@ describe 'A box' do
       box.tiles_remaining?
       expect(box.tiles_remaining?).to eq(true)
     end
-    it 'returns false when none of the tiles are up' do
-      box = Box.new()
-      box.flip(9)
-      expect(box.tiles_remaining?).to eq(false)
-    end
+    # it 'returns false when none of the tiles are up' do
+    #   box = Box.new()
+    #   box.flip(9)
+    #   expect(box.tiles_remaining?).to eq(false)
+    # end
   end
 
   describe '#no_tiles_remaining?' do
@@ -55,7 +57,6 @@ describe 'A box' do
 
     # end
     it 'returns false when any tile is up' do
-      box = Box.new
       expect(box.no_tiles_remaining?).to eq(false)
     end
   end
@@ -63,9 +64,10 @@ describe 'A box' do
   describe '#shut?' do
     it 'is true when there are no tiles remaining' do
       skip
+
     end
     it 'is false when there are tiles remaining' do
-      skip
+      expect(box.shut?).to eq(false)
     end
   end
 
