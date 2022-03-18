@@ -14,9 +14,11 @@ describe 'A tile set' do
       expect(tile_set.length).to eq(10)
     end
 
-    it 'returns an array of tiles whose values increase from 1, by 1' do
-      skip
-    end
+    # it 'returns an array of tiles whose values increase from 1, by 1' do
+    #   tile_set = TileSet.new()
+    #   tile_set.generate
+    #   expect(tile_set)
+    # end
 
   end
 
