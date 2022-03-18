@@ -2,7 +2,7 @@ require_relative 'tile_set'
 
 class Box
 
-  attr_reader :tiles
+  attr_reader :tiles 
 
   def initialize(tiles = TileSet.generate)
     @tiles = tiles

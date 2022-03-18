@@ -13,9 +13,8 @@ describe 'A box' do
     context 'by default' do
       it 'will initialize an array of tiles' do
         
-        tile_set = TileSet.new
-        box = Box.new(tile_set)
-        expect(box.tile_set).to eq(9)
+        box = Box.new()
+        expect(box).to respond_to(:tiles)
       end
     end
     context 'with a specific array of tiles' do
