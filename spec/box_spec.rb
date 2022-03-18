@@ -12,7 +12,10 @@ describe 'A box' do
   describe 'creation' do
     context 'by default' do
       it 'will initialize an array of tiles' do
-        skip
+        
+        tile_set = TileSet.new
+        box = Box.new(tile_set)
+        expect(box.tile_set).to eq(9)
       end
     end
     context 'with a specific array of tiles' do
