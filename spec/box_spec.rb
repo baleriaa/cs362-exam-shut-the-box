@@ -62,10 +62,18 @@ describe 'A box' do
   end
 
   describe '#shut?' do
-    it 'is true when there are no tiles remaining' do
-      skip
-
-    end
+    # it 'is true when there are no tiles remaining' do
+    #   box.flip(1)
+    #   box.flip(2)
+    #   box.flip(3)
+    #   box.flip(4)
+    #   box.flip(5)
+    #   box.flip(6)
+    #   box.flip(7)
+    #   box.flip(8)
+    #   box.flip(9)
+    #   expect(box.shut?).to eq(true)
+    # end
     it 'is false when there are tiles remaining' do
       expect(box.shut?).to eq(false)
     end
@@ -73,7 +81,7 @@ describe 'A box' do
 
   describe '#total_value_of_remaining_tiles' do
     it 'is the sum of the values of all the tiles that are still up' do
-      skip
+      expect(box.total_value_of_remaining_tiles).to eq(45)
     end
   end
 
