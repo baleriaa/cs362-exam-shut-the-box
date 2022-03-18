@@ -85,14 +85,15 @@ describe 'A box' do
     end
   end
 
-  describe '#flip' do
-    it 'flips each tile whose value matches any of the tile values it receives' do
-      skip
-    end
-    it 'does not flip any tile whose value does not match any of the tile values it receives' do
-      skip
-    end
-  end
+  # describe '#flip' do
+  #   it 'flips each tile whose value matches any of the tile values it receives' do
+  #     box.flip(9)
+  #     expect(box.tile_values)
+  #   end
+  #   it 'does not flip any tile whose value does not match any of the tile values it receives' do
+  #     skip
+  #   end
+  # end
 
   describe '#to_s string representation' do
     # Given a box with the tiles that have values 1, 2, 3, 4,
