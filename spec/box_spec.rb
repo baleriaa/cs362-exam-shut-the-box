@@ -5,7 +5,7 @@ describe 'A box' do
   describe 'attributes' do
     it 'has tiles' do
       box = Box.new
-      expect(box).to respond_to(tiles)
+      expect(box).to respond_to(:tiles)
     end
   end
 
