@@ -39,11 +39,24 @@ describe 'A box' do
   end
 
   describe '#no_tiles_remaining?' do
-    it 'returns true when none of the tiles are up' do
-      skip
-    end
+    # it 'returns true when none of the tiles are up' do
+    #   box = Box.new
+    #   box.flip(1)
+    #   box.flip(2)
+    #   box.flip(3)
+    #   box.flip(4)
+    #   box.flip(5)
+    #   box.flip(6)
+    #   box.flip(7)
+    #   box.flip(8)
+    #   box.flip(9)
+    #   box.no_tiles_remaining?
+    #   expect(box.no_tiles_remaining?).to eq(true)
+
+    # end
     it 'returns false when any tile is up' do
-      skip
+      box = Box.new
+      expect(box.no_tiles_remaining?).to eq(false)
     end
   end
 
