@@ -28,8 +28,8 @@ describe 'A box' do
   describe '#tiles_remaining?' do
     it 'returns true when at least one tile is up' do
       box = Box.new()
-      box.tiles_remaining
-      expect(box).to eq(true)
+      box.tiles_remaining?
+      expect(box.tiles_remaining?).to eq(true)
     end
     it 'returns false when none of the tiles are up' do
       skip
