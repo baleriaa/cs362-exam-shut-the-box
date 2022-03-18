@@ -32,7 +32,9 @@ describe 'A box' do
       expect(box.tiles_remaining?).to eq(true)
     end
     it 'returns false when none of the tiles are up' do
-      skip
+      box = Box.new()
+      box.no_tiles_remaining?
+      expect(box.no_tiles_remaining?).to eq(false)
     end
   end
 
