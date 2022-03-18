@@ -33,8 +33,8 @@ describe 'A box' do
     end
     it 'returns false when none of the tiles are up' do
       box = Box.new()
-      box.no_tiles_remaining?
-      expect(box.no_tiles_remaining?).to eq(false)
+      box.flip(9)
+      expect(box.tiles_remaining?).to eq(false)
     end
   end
 
