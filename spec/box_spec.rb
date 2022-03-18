@@ -19,8 +19,8 @@ describe 'A box' do
     end
     context 'with a specific array of tiles' do
       it 'will retain the tiles passed its constructor' do
-        box = Box.new()
-        expect(box.tiles).to eq(9)
+        box = Box.new(10)
+        expect(box.tiles).to eq(10)
       end
     end
   end
